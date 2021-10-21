@@ -34,7 +34,7 @@ def transkriptiranjeKlipa(klip):
         #textWithoutPunctuation = r.recognize_google(audio)
         
         #NOVI GOOGLE CLOUD API
-        with open("speechtotext-277309-91cdb6bb51b6.json") as f:
+        with open("[REDACTED]") as f:
             GOOGLE_CLOUD_SPEECH_CREDENTIALS = f.read()
         textWithoutPunctuation = r.recognize_google_cloud(audio, credentials_json=GOOGLE_CLOUD_SPEECH_CREDENTIALS, language="en-US", show_all = False)
         
